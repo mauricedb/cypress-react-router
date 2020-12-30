@@ -1,4 +1,6 @@
 {
+  "name": "cypress-react-router",
+  "author": "Maurice de Beijer",
   "version": "0.1.0",
   "license": "MIT",
   "main": "dist/index.js",
@@ -20,6 +22,7 @@
     "analyze": "size-limit --why"
   },
   "peerDependencies": {
+    "cypress": ">= 6",
     "react": ">=16"
   },
   "husky": {
@@ -33,8 +36,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "cypress-react-router",
-  "author": "Maurice de Beijer",
   "module": "dist/cypress-react-router.esm.js",
   "size-limit": [
     {
@@ -50,9 +51,12 @@
     "@size-limit/preset-small-lib": "^4.9.1",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@types/react-router-dom": "^5.1.6",
+    "cypress": "^6.2.0",
     "husky": "^4.3.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
     "size-limit": "^4.9.1",
     "tsdx": "^0.14.1",
     "tslib": "^2.0.3",
