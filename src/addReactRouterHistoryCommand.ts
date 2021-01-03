@@ -14,9 +14,9 @@ export const addReactRouterHistoryCommand = () => {
     'historyPush',
     { prevSubject: false },
     (path: Path, state?: LocationState) => {
-      cy.window().then(win => {
-        win.cyHistory.push(path, state);
-      });
+      cy.window()
+        .its('cyHistory')
+        .then(history => history.push(path, state));
     }
   );
 
@@ -24,9 +24,9 @@ export const addReactRouterHistoryCommand = () => {
     'historyReplace',
     { prevSubject: false },
     (path: Path, state?: LocationState) => {
-      cy.window().then(win => {
-        win.cyHistory.replace(path, state);
-      });
+      cy.window()
+        .its('cyHistory')
+        .then(history => history.replace(path, state));
     }
   );
 };
