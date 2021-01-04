@@ -1,7 +1,7 @@
 {
   "name": "cypress-react-router",
   "author": "Maurice de Beijer",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
