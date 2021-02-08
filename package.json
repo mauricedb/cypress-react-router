@@ -1,8 +1,33 @@
 {
   "name": "cypress-react-router",
+  "description": "Adds cy.historyPush() and cy.historyReplace() commands to the Cypress object to navigate using the React Router Dom history API. Both commands take the path and an optional state object as parameters.",
   "author": "Maurice de Beijer",
+  "keywords": [
+    "cypress-react-router",
+    "cypress",
+    "cypress.io",
+    "commands",
+    "visit",
+    "cy.visit",
+    "react",
+    "router",
+    "route",
+    "routing",
+    "history",
+    "link",
+    "browserrouter",
+    "hashrouter"
+  ],
   "version": "1.0.0",
   "license": "MIT",
+  "homepage": "https://github.com/mauricedb/cypress-react-router#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mauricedb/cypress-react-router.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mauricedb/cypress-react-router/issues"
+  },
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
