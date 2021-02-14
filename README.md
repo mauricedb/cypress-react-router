@@ -8,6 +8,21 @@
 
 Adds `cy.historyPush()` and `cy.historyReplace()` commands to the Cypress object to navigate using the React Router Dom history API. Both commands take the `path` and an optional `state` object as parameters.
 
+## With TypeScript
+
+Typings should be added as follows in tsconfig.json:
+
+```json
+{
+  "compilerOptions": {
+    "lib": ["es5", "dom"],
+    "target": "es5",
+    "types": ["cypress", "cypress-react-router"]
+  },
+  "include": ["**/*.ts"]
+}
+```
+
 ## Should you use this package?
 
 If you are wondering if you should use this package the most likely answer is no.
