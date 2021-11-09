@@ -91,3 +91,11 @@ context('Open secure articles', () => {
   });
 });
 ```
+
+## Versioning
+
+**Make sure to use the correct version of this library for you!**
+
+Version 1.* of this package is intended for use with React Router DOM version 5
+
+Version 2.* of this package is intended for use with React Router DOM version 6 which has an breaking API.
