@@ -1,14 +1,14 @@
 import { useEffect, FC } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export const CypressHistorySupport: FC = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (window.Cypress) {
-      window.cyHistory = history;
+      window.cyNavigate = navigate;
     }
-  }, [history]);
+  }, [navigate]);
 
   return null;
 };
