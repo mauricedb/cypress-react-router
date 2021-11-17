@@ -96,6 +96,6 @@ context('Open secure articles', () => {
 
 **Make sure to use the correct version of this library for you!**
 
-Version 1.* of this package is intended for use with React Router DOM version 5
+Version 1.* of this package is intended for use with React Router DOM version 5. Use the `cy.historyPush()` and `cy.historyReplace()` commands to execute the respective `history.push()` and `history.replace()` functions.
 
-Version 2.* of this package is intended for use with React Router DOM version 6 which has an breaking API.
+Version 2.* of this package is intended for use with React Router DOM version 6 which has an different API. Use the `cy.routerNavigate()` command to execute the `navigate()` function.
