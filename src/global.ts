@@ -1,8 +1,8 @@
-import { History } from 'history';
+import { NavigateFunction } from 'react-router';
 
 declare global {
   interface Window {
-    cyHistory: History<unknown>;
+    cyNavigate: NavigateFunction;
     Cypress: Cypress.Cypress;
   }
 }

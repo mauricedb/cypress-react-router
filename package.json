@@ -1,6 +1,6 @@
 {
   "name": "cypress-react-router",
-  "description": "Adds cy.historyPush() and cy.historyReplace() commands to the Cypress object to navigate using the React Router Dom history API. Both commands take the path and an optional state object as parameters.",
+  "description": "Adds cy.routerNavigate() command to the Cypress object to navigate using the React Router Dom history API. The command take the to and an optional options object as parameters.",
   "author": "Maurice de Beijer",
   "keywords": [
     "cypress-react-router",
@@ -18,7 +18,7 @@
     "browserrouter",
     "hashrouter"
   ],
-  "version": "1.0.2",
+  "version": "2.0.0-0",
   "license": "MIT",
   "homepage": "https://github.com/mauricedb/cypress-react-router#readme",
   "repository": {
@@ -50,8 +50,8 @@
   },
   "peerDependencies": {
     "cypress": ">= 6",
-    "react": ">=16",
-    "react-router-dom": ">= 5"
+    "react": ">=16.8",
+    "react-router-dom": ">= 6"
   },
   "husky": {
     "hooks": {
@@ -76,18 +76,17 @@
     }
   ],
   "devDependencies": {
-    "@size-limit/preset-small-lib": "^4.9.1",
-    "@types/react": "^17.0.1",
-    "@types/react-dom": "^17.0.0",
-    "@types/react-router-dom": "^5.1.7",
-    "cypress": "^8.0.0",
-    "husky": "^7.0.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-router-dom": "^5.2.0",
-    "size-limit": "^4.9.1",
+    "@size-limit/preset-small-lib": "^6.0.4",
+    "@types/react": "^17.0.34",
+    "@types/react-dom": "^17.0.11",
+    "cypress": "^8.7.0",
+    "husky": "^7.0.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.0.2",
+    "size-limit": "^6.0.4",
     "tsdx": "^0.14.1",
-    "tslib": "^2.1.0",
-    "typescript": "^4.1.3"
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.4"
   }
 }

@@ -6,7 +6,7 @@
 
 # Usage:
 
-Adds `cy.historyPush()` and `cy.historyReplace()` commands to the Cypress object to navigate using the React Router Dom history API. Both commands take the `path` and an optional `state` object as parameters.
+Adds `cy.routerNavigate()` command to the Cypress object to navigate using the React Router Dom `useNavigate()` API. The command take the `to` and an optional `options` object as parameter.
 
 ## With TypeScript
 
@@ -75,7 +75,7 @@ In `/cypress/support/commands.js` add support for the router commands
 import 'cypress-react-router/add-commands';
 ```
 
-Then in your Cypress tests use the `cy.historyPush()` or `cy.historyReplace()` commands as needed.
+Then in your Cypress tests use the `cy.routerNavigate()` command as needed.
 
 ```JavaScript
 context('Open secure articles', () => {
@@ -85,9 +85,17 @@ context('Open secure articles', () => {
   });
 
   it('navigates to article 42 without reload', () => {
-    cy.historyPush('/article/42');
+    cy.routerNavigate('/article/42');
 
     // Do whatever you need to do
   });
 });
 ```
+
+## Versioning
+
+**Make sure to use the correct version of this library for you!**
+
+Version 1.* of this package is intended for use with React Router DOM version 5. Use the `cy.historyPush()` and `cy.historyReplace()` commands to execute the respective `history.push()` and `history.replace()` functions.
+
+Version 2.* of this package is intended for use with React Router DOM version 6 which has an different API. Use the `cy.routerNavigate()` command to execute the `navigate()` function.
