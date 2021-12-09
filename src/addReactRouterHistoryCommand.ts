@@ -13,7 +13,7 @@ export const addReactRouterHistoryCommand = () => {
     'routerNavigate',
     { prevSubject: false },
     (to: To, options?: NavigateOptions) => {
-      cy.window()
+      return cy.window()
         .its('cyNavigate')
         .then((navigate: NavigateFunction) => navigate(to, options));
     }
