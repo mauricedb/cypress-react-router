@@ -12,10 +12,10 @@ export const addReactRouterHistoryCommand = () => {
   Cypress.Commands.add(
     'routerNavigate',
     { prevSubject: false },
-    (to: To, options?: NavigateOptions) => {
-      return cy.window()
+    (to: To, options?: NavigateOptions) =>
+      cy
+        .window()
         .its('cyNavigate')
-        .then((navigate: NavigateFunction) => navigate(to, options));
-    }
+        .then((navigate: NavigateFunction) => navigate(to, options))
   );
 };
