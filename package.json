@@ -79,7 +79,7 @@
     "@size-limit/preset-small-lib": "^8.0.0",
     "@types/react": "^18.0.1",
     "@types/react-dom": "^18.0.0",
-    "cypress": "^10.0.1",
+    "cypress": "^11.0.0",
     "husky": "^8.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
