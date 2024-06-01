@@ -65,7 +65,8 @@
     "printWidth": 80,
     "semi": true,
     "singleQuote": true,
-    "trailingComma": "es5"
+    "trailingComma": "es5",
+    "endOfLine": "auto"
   },
   "module": "dist/cypress-react-router.esm.js",
   "size-limit": [
