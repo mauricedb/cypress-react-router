@@ -58,6 +58,9 @@
       "pre-commit": "tsdx lint"
     }
   },
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
   "prettier": {
     "printWidth": 80,
     "semi": true,
