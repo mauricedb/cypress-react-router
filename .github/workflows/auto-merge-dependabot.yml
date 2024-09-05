@@ -3,7 +3,7 @@ name: Auto-Merge oldest Dependabot PR
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 4 * * *' # At 4:00 on every day-of-week
+    - cron: '0 5 * * *' # At 4:00 on every day-of-week
 
 jobs:
   merge:
